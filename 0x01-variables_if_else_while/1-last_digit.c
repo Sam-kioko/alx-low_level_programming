@@ -9,25 +9,25 @@
  */
 int main(void)
 {
-	int n, lastDigit;
+	int n, a;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastDigit = n % 10;
-	printf("Last digit of %d is", lastDigit);
+	a = n % 10;
+	printf("Last digit of %d is", a);
 
 
-	if ('lastDigit' > 5)
+	if (a > 5)
 	{
-	    printf(" and is greater than 5\n", lastDigit);
+	    printf(" and is greater than 5\n", a);
 	}
-	else if ('lastDigit' == 0)
+	else if (a == 0)
 	{
-	    printf(" and is 0\n", lastDigit);
+	    printf(" and is 0\n", a);
 	}
 	else
 	{
-	    printf(" and is less than 6 and not 0\n", lastDigit);
+	    printf(" and is less than 6 and not 0\n", a);
 	}
 
 	return (0);
