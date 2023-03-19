@@ -3,35 +3,32 @@
 #include <stdio.h>
 
 /**
- * main -  Assigns a random number to variable n and prints the last digit of n
+ * main - prints output of positive, negative, or zero number
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int n;
-	int lastDigit;
+	int n, lastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastDigit = abs(n) % 10;
+	lastDigit = n % 10;
+	printf("Last digit of %d is", n, lastDigit);
 
-	printf("Last digit of %d is ", n);
 
 	if (lastDigit > 5)
 	{
-		printf("%d and is greater than 5\n", lastDigit);
+	    printf(" and is greater than 5\n", n, lastDigit);
 	}
 	else if (lastDigit == 0)
 	{
-		printf("%d and is 0\n", lastDigit);
+	    printf(" and is 0\n", n, lastDigit);
 	}
 	else
 	{
-		printf("%d and is less than 6 and not 0\n", lastDigit);
+	    printf(" and is less than 6 and not 0\n", n, lastDigit);
 	}
 
 	return (0);
 }
-
