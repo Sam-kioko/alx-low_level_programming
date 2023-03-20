@@ -17,20 +17,18 @@ int main(void)
 	/* your code goes there */
 	d = n % 10;
 
-	printf("Last digit of %d is ", d);
+	printf("Last digit of %i is ", d);
 	if (d > 5)
 	{
-		printf("%d and is greater than 5", d);
+		printf("%i and is greater than 5\n", d);
 	}
 	else if (d == 0)
 	{
-		printf("%d and is 0", d);
+		printf("%i and is 0\n", d);
 	}
 	else
 	{
-		printf("%d and is less than 6 and not 0", d);
+		printf("%i and is less than 6 and not 0\n", d);
 	}
-	printf("\n");
-
 	return (0);
 }
