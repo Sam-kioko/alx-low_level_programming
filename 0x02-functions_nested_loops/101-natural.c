@@ -1,24 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * sum_multiples - Computes and returns the sum of multiples of three and five
+ * main - Prints the sum of all multiples of 3 and 5 upto 1024
  *
- * Return: The sum of all multiples of three and five
+ * Return: Always 0 (success)
  */
 
-int sum_multiples(void)
+int main(void)
 {
-	int sum = 0;
-	int i;
+	int i, z = 0;
 
-	for (i = 0; i < 1024; i++)
+	while (i < 1024)
 	{
-
-		if (sum_multiples(i))
+		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			sum += i;
+			z += i;
 		}
+		i++;
 	}
-
-	return (sum);
+	printf("%d\n", z);
+	return (0);
 }
