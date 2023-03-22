@@ -3,7 +3,9 @@
 
 /**
  * print_to_98 - Prints all natural numbers from n to ninety eight
- * @n: Starting number
+ * @n: The number to start the count from
+ *
+ * Return: void
  */
 
 void print_to_98(int n)
@@ -12,24 +14,18 @@ void print_to_98(int n)
 
 	if (n <= 98)
 	{
-		for (i = 98; i <= 98; i++)
+
+		for (i = n; i < 98; i++)
 		{
-			printf("%d\n", i);
-			if (i != 98)
-			{
-				printf(", \n");
-			}
+			printf("%d, ", i);
 		}
 	}
 	else
 	{
-		for (i = 98; i >= 98; i--)
+		for (i = n; i > 98; i--)
 		{
-			printf("%d\n", i);
-			if (i != 98)
-			{
-				printf(", \n");
-			}
+			printf("%d, ", i);
 		}
 	}
+	printf("98\n");
 }
