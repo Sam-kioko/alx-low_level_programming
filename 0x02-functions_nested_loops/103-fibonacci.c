@@ -3,7 +3,7 @@
 /**
  * main - Prints the sum of even Fibonacci numbers less than 4000000
  *
- * Return: Nothing
+ * Return: Nothing!
  */
 
 int main(void)
@@ -18,8 +18,8 @@ int main(void)
 		{
 			sum += k;
 			j = k - j;
-		}
 		++i;
+		}
 	}
 	printf("%ld\n", sum);
 	return (0);
