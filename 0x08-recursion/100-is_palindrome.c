@@ -15,18 +15,13 @@ int is_palindrome(char *s)
 	{
 		return (0);
 	}
-	while (*(end + 1))
+	if (end == begin)
 	{
-		end++;
+		return (1);
 	}
-	while (end > begin)
+	if (*begin != *end)
 	{
-		if (*begin != *end)
-		{
-			return (0);
-		}
-		begin++;
-		end--;
+		return (0);
 	}
 
 	return (1);
