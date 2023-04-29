@@ -15,6 +15,7 @@ void print_all(const char * const format, ...)
 	va_list valist;
 	int i = 0, k = 0;
 	char *s = "";
+
 	print_t funcs[] = {
 		{'c', print_char},
 		{'i', print_int},
