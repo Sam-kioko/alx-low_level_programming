@@ -38,6 +38,6 @@ unsigned int binary_to_uint(const char *b)
 		}
 		p *= 2;
 	}
-	
+
 	return (k);
 }
